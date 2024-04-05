@@ -26,7 +26,7 @@ model Package {
 model Stock {
   id    Int    @id @default(autoincrement())
   name  String
-  stock Int
+  stock Int?    @default(0)
   packages Package[]
 }
 
